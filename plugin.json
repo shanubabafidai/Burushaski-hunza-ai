@@ -1,0 +1,24 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "burushaski-hunza-research",
+  "version": "0.1.0",
+  "description": "Source-grounded Hunza Burushaski lexicon, grammar and translation research with moderated community corrections.",
+  "license": "MIT",
+  "keywords": ["burushaski", "hunza", "linguistics", "language-preservation", "research"],
+  "extensions": {
+    "com.openai": {
+      "onboardingSkill": "./skills/get-started/SKILL.md",
+      "interface": {
+        "displayName": "Burushaski Hunza Research",
+        "shortDescription": "Verified Hunza Burushaski language research",
+        "longDescription": "Explore verified Hunza Burushaski vocabulary, sentences and grammar, and propose corrections for native-speaker review. Unverified content is never presented as sourced fact.",
+        "developerName": "Burushaski Research Project",
+        "defaultPrompt": [
+          "Look up a Hunza Burushaski word with verified sources.",
+          "Find example sentences for this English phrase in Hunza Burushaski.",
+          "Explain a Hunza Burushaski grammar pattern using approved records."
+        ]
+      }
+    }
+  }
+}

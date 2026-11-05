@@ -1,0 +1,3 @@
+# Maintenance-line MCP SDK intentionally pinned to its documented v1 interface.
+# Upgrade to v2 after updating burushaski/server.py; do not unpin silently.
+mcp>=1.28,<2
